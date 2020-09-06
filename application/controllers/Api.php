@@ -671,6 +671,32 @@ public function viewCommentsNew()
         echo json_encode($response);
 	}
 	
+
+///All orders new sowmya
+
+public function allOrdersNew()
+	{
+		$array_of_event = array();
+		$allOrders= $this->api_model->allOrdersNew();
+		//pr($allOrders);exit();
+		
+		if(!empty($allOrders)&&($allOrders!=''))
+		{
+			foreach($allOrders as $row)
+			{
+			$array_of_event[] = $row;
+			}
+			$data['success'] = "1";
+		}else{
+			$data['success'] = "0";		    
+		}
+		    $data['data'] = $array_of_event; //need to assign event here
+		    $response['responsedata'] = $data;
+		    
+        echo json_encode($response);
+	}
+	
+
 		//change status of order
 	public function orderStatusChange()
 	{

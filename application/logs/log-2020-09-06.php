@@ -120,3 +120,124 @@ ERROR - 2020-09-06 13:26:36 --> Severity: error --> Exception: Call to a member 
 ERROR - 2020-09-06 13:27:16 --> Query error: Unknown table 'dailyestoretest.odr' - Invalid query: SELECT `odr`.*, `itd`.*, `u`.*
 FROM `itemdetails` `itd`
 ERROR - 2020-09-06 13:27:16 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 368
+ERROR - 2020-09-06 14:14:30 --> Query error: Unknown column 'itd.userId' in 'on clause' - Invalid query: SELECT `odr`.*, `itd`.*, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `users` `u` ON `u`.`userId` = `itd`.`userId`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ORDER BY `odr`.`orderId` DESC
+ERROR - 2020-09-06 14:14:30 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 373
+ERROR - 2020-09-06 14:15:00 --> Query error: Unknown column 'itd.userId' in 'on clause' - Invalid query: SELECT `odr`.*, `itd`.*, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `users` `u` ON `u`.`userId` = `itd`.`userId`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ORDER BY `odr`.`orderId` DESC
+ERROR - 2020-09-06 14:15:00 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 373
+ERROR - 2020-09-06 14:17:43 --> Query error: Unknown column 'itd.userId' in 'on clause' - Invalid query: SELECT *
+FROM `itemdetails` `itd`
+LEFT JOIN `users` `u` ON `u`.`userId` = `itd`.`userId`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ORDER BY `odr`.`orderId` DESC
+ERROR - 2020-09-06 14:17:43 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 373
+ERROR - 2020-09-06 14:21:32 --> Query error: Column 'orderId' in order clause is ambiguous - Invalid query: SELECT *
+FROM (`itemdetails` `itd`, `orders`)
+LEFT JOIN `users` `u` ON `u`.`userId` = `itd`.`createdBy`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ORDER BY `orderId` DESC
+ERROR - 2020-09-06 14:21:32 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 373
+ERROR - 2020-09-06 14:30:51 --> Query error: Unknown column 'itd.userId' in 'on clause' - Invalid query: SELECT `odr`.*, `itd`.*, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `users` `u` ON `u`.`userId` = `itd`.`userId`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ORDER BY `odr`.`orderId` DESC
+ERROR - 2020-09-06 14:30:51 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 388
+ERROR - 2020-09-06 14:35:05 --> Query error: Unknown column 'itd.userId' in 'on clause' - Invalid query: SELECT `odr`.*, `itd`.*, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `users` `u` ON `u`.`userId` = `itd`.`userId`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ERROR - 2020-09-06 14:35:05 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 390
+ERROR - 2020-09-06 14:35:20 --> Query error: Unknown table 'dailyestoretest.u' - Invalid query: SELECT `odr`.*, `itd`.*, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ERROR - 2020-09-06 14:35:20 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 390
+ERROR - 2020-09-06 14:35:33 --> Query error: Unknown table 'dailyestoretest.u' - Invalid query: SELECT `odr`.*, `itd`.*, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ERROR - 2020-09-06 14:35:33 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 390
+ERROR - 2020-09-06 14:35:39 --> Query error: Unknown table 'dailyestoretest.u' - Invalid query: SELECT `odr`.*, `itd`.*, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ERROR - 2020-09-06 14:35:39 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 390
+ERROR - 2020-09-06 14:35:40 --> Query error: Unknown table 'dailyestoretest.u' - Invalid query: SELECT `odr`.*, `itd`.*, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ERROR - 2020-09-06 14:35:40 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 390
+ERROR - 2020-09-06 14:36:02 --> Severity: error --> Exception: syntax error, unexpected '$offers' (T_VARIABLE) C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 397
+ERROR - 2020-09-06 14:36:27 --> Severity: error --> Exception: syntax error, unexpected 'if' (T_IF) C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 398
+ERROR - 2020-09-06 14:36:47 --> Query error: Unknown column 'itd.userId' in 'on clause' - Invalid query: SELECT `odr`.*, `itd`.*, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `users` `u` ON `u`.`userId` = `itd`.`userId`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ORDER BY `odr`.`orderId` DESC
+ERROR - 2020-09-06 14:36:47 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 372
+ERROR - 2020-09-06 14:37:02 --> Query error: Unknown column 'itd.userId' in 'on clause' - Invalid query: SELECT `odr`.*, `itd`.*, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `users` `u` ON `u`.`userId` = `itd`.`userId`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ORDER BY `odr`.`orderId` DESC
+ERROR - 2020-09-06 14:37:02 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 372
+ERROR - 2020-09-06 14:37:18 --> Query error: Unknown column 'itd.userId' in 'on clause' - Invalid query: SELECT `odr`.*, `itd`.*, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `users` `u` ON `u`.`userId` = `itd`.`userId`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ORDER BY `odr`.`orderId` DESC
+ERROR - 2020-09-06 14:37:18 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 372
+ERROR - 2020-09-06 14:38:54 --> Query error: Unknown column 'itd.userId' in 'on clause' - Invalid query: SELECT `odr`.*, `itd`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `users` `u` ON `u`.`userId` = `itd`.`userId`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ERROR - 2020-09-06 14:38:54 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 398
+ERROR - 2020-09-06 14:46:37 --> Query error: Unknown table 'dailyestoretest.u' - Invalid query: SELECT `odr`.*, `itd`.`itemName`, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ORDER BY `orderId` DESC
+ERROR - 2020-09-06 14:46:37 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 389
+ERROR - 2020-09-06 14:47:54 --> Query error: Unknown table 'dailyestoretest.u' - Invalid query: SELECT `odr`.*, `itd`.`itemName`, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ORDER BY `orderId` DESC
+ERROR - 2020-09-06 14:47:54 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 390
+ERROR - 2020-09-06 14:47:55 --> Query error: Unknown table 'dailyestoretest.u' - Invalid query: SELECT `odr`.*, `itd`.`itemName`, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ORDER BY `orderId` DESC
+ERROR - 2020-09-06 14:47:55 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 390
+ERROR - 2020-09-06 14:54:01 --> Query error: Unknown table 'dailyestoretest.u' - Invalid query: SELECT `odr`.*, `itd`.`itemName`, `u`.*
+FROM (`itemdetails` `itd`, `orders`)
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ORDER BY `orderId` DESC
+ERROR - 2020-09-06 14:54:01 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 389
+ERROR - 2020-09-06 14:54:27 --> Query error: Unknown table 'dailyestoretest.u' - Invalid query: SELECT `odr`.*, `itd`.`itemName`, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ORDER BY `orderId` DESC
+ERROR - 2020-09-06 14:54:27 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 389
+ERROR - 2020-09-06 14:55:15 --> Query error: Unknown table 'dailyestoretest.u' - Invalid query: SELECT `odr`.*, `itd`.`itemName`, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ERROR - 2020-09-06 14:55:15 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 389
+ERROR - 2020-09-06 14:55:17 --> Query error: Unknown table 'dailyestoretest.u' - Invalid query: SELECT `odr`.*, `itd`.`itemName`, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ERROR - 2020-09-06 14:55:17 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 389
+ERROR - 2020-09-06 14:55:24 --> Query error: Unknown table 'dailyestoretest.u' - Invalid query: SELECT `odr`.*, `itd`.`itemName`, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ERROR - 2020-09-06 14:55:24 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 389
+ERROR - 2020-09-06 14:55:25 --> Query error: Unknown table 'dailyestoretest.u' - Invalid query: SELECT `odr`.*, `itd`.`itemName`, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ERROR - 2020-09-06 14:55:25 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 389
+ERROR - 2020-09-06 14:55:38 --> Query error: Unknown table 'dailyestoretest.u' - Invalid query: SELECT `odr`.*, `itd`.`itemName`, `u`.*
+FROM `itemdetails` `itd`
+LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
+ERROR - 2020-09-06 14:55:38 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 389

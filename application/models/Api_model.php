@@ -363,6 +363,7 @@ public function orderStatus($orderId='',$status='')
   
 public function allOrders()
 {
+	
       //$qry = $this->db->order_by('orderId','desc')->get('orders')->result_array();
         $offers = $this->db->select("odr.*,itd.*,u.*");
                   $this->db->from('itemdetails itd');
@@ -370,6 +371,21 @@ public function allOrders()
                   $this->db->join('orders odr','odr.itemId = itd.itemId','left');
                   $this->db->order_by('odr.orderId','desc')->get()->result_array();
                   
+      if(!empty($offers)){
+        return $offers;
+      }else{
+        return 0;
+      }
+}
+
+//to get all orders - sowmya new
+public function allOrdersNew()
+{
+      //$qry = $this->db->order_by('orderId','desc')->get('orders')->result_array();
+        $this->db->select("odr.*,itd.itemName");
+									$this->db->from('orders odr');
+									$this->db->join('itemdetails itd','itd.itemId = odr.itemId','left');
+									$offers = $this->db->order_by('orderId','desc')->get()->result_array();      
       if(!empty($offers)){
         return $offers;
       }else{

@@ -241,3 +241,83 @@ ERROR - 2020-09-06 14:55:38 --> Query error: Unknown table 'dailyestoretest.u' -
 FROM `itemdetails` `itd`
 LEFT JOIN `orders` `odr` ON `odr`.`itemId` = `itd`.`itemId`
 ERROR - 2020-09-06 14:55:38 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 389
+ERROR - 2020-09-06 16:45:00 --> Severity: error --> Exception: Too few arguments to function Api::pendingOrdersNew(), 0 passed in C:\xampp\htdocs\newdailyestore\dailyestore\system\core\CodeIgniter.php on line 532 and exactly 1 expected C:\xampp\htdocs\newdailyestore\dailyestore\application\controllers\Api.php 700
+ERROR - 2020-09-06 16:45:31 --> Severity: error --> Exception: Too few arguments to function Api::pendingOrdersNew(), 0 passed in C:\xampp\htdocs\newdailyestore\dailyestore\system\core\CodeIgniter.php on line 532 and exactly 1 expected C:\xampp\htdocs\newdailyestore\dailyestore\application\controllers\Api.php 700
+ERROR - 2020-09-06 16:45:50 --> Severity: error --> Exception: Too few arguments to function Api::pendingOrdersNew(), 0 passed in C:\xampp\htdocs\newdailyestore\dailyestore\system\core\CodeIgniter.php on line 532 and exactly 1 expected C:\xampp\htdocs\newdailyestore\dailyestore\application\controllers\Api.php 700
+ERROR - 2020-09-06 16:46:29 --> Severity: error --> Exception: Too few arguments to function Api::pendingOrdersNew(), 0 passed in C:\xampp\htdocs\newdailyestore\dailyestore\system\core\CodeIgniter.php on line 532 and exactly 1 expected C:\xampp\htdocs\newdailyestore\dailyestore\application\controllers\Api.php 700
+ERROR - 2020-09-06 16:48:23 --> Severity: error --> Exception: Too few arguments to function Api::pendingOrdersNew(), 0 passed in C:\xampp\htdocs\newdailyestore\dailyestore\system\core\CodeIgniter.php on line 532 and exactly 1 expected C:\xampp\htdocs\newdailyestore\dailyestore\application\controllers\Api.php 700
+ERROR - 2020-09-06 16:51:21 --> Severity: error --> Exception: syntax error, unexpected '$offers' (T_VARIABLE) C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 407
+ERROR - 2020-09-06 16:53:01 --> Severity: error --> Exception: syntax error, unexpected '$this' (T_VARIABLE) C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 406
+ERROR - 2020-09-06 16:53:23 --> Query error: Column 'status' in where clause is ambiguous - Invalid query: SELECT `odr`.*, `itd`.`itemName`
+FROM (`orders` `odr`, `orders`)
+LEFT JOIN `itemdetails` `itd` ON `itd`.`itemId` = `odr`.`itemId`
+WHERE `status` = '0'
+ORDER BY `orderId` DESC
+ERROR - 2020-09-06 16:53:23 --> Severity: Notice --> Undefined variable: array_of_event C:\xampp\htdocs\newdailyestore\dailyestore\application\controllers\Api.php 717
+ERROR - 2020-09-06 16:54:35 --> Query error: Column 'status' in where clause is ambiguous - Invalid query: SELECT `odr`.*, `itd`.`itemName`
+FROM (`orders` `odr`, `orders`)
+LEFT JOIN `itemdetails` `itd` ON `itd`.`itemId` = `odr`.`itemId`
+WHERE `status` = '0'
+ORDER BY `orderId` DESC
+ERROR - 2020-09-06 16:54:46 --> Query error: Column 'status' in where clause is ambiguous - Invalid query: SELECT `odr`.*, `itd`.`itemName`
+FROM (`orders` `odr`, `orders`)
+LEFT JOIN `itemdetails` `itd` ON `itd`.`itemId` = `odr`.`itemId`
+WHERE `status` = '1'
+ORDER BY `orderId` DESC
+ERROR - 2020-09-06 16:56:00 --> Query error: Column 'status' in where clause is ambiguous - Invalid query: SELECT `odr`.*, `itd`.`itemName`
+FROM (`orders` `odr`, `orders`)
+LEFT JOIN `itemdetails` `itd` ON `itd`.`itemId` = `odr`.`itemId`
+WHERE `status` = '1'
+ORDER BY `orderId` DESC
+ERROR - 2020-09-06 16:56:06 --> Query error: Column 'status' in where clause is ambiguous - Invalid query: SELECT `odr`.*, `itd`.`itemName`
+FROM (`orders` `odr`, `orders`)
+LEFT JOIN `itemdetails` `itd` ON `itd`.`itemId` = `odr`.`itemId`
+WHERE `status` = '1'
+ORDER BY `orderId` DESC
+ERROR - 2020-09-06 16:56:21 --> Query error: Column 'status' in where clause is ambiguous - Invalid query: SELECT `odr`.*, `itd`.`itemName`
+FROM (`orders` `odr`, `orders`)
+LEFT JOIN `itemdetails` `itd` ON `itd`.`itemId` = `odr`.`itemId`
+WHERE `status` = '1'
+ORDER BY `orderId` DESC
+ERROR - 2020-09-06 17:34:07 --> Severity: error --> Exception: syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 407
+ERROR - 2020-09-06 17:34:22 --> Query error: Column 'status' in where clause is ambiguous - Invalid query: SELECT `odr`.*, `itd`.`itemName`
+FROM `orders` `odr`
+LEFT JOIN `itemdetails` `itd` ON `itd`.`itemId` = `odr`.`itemId`
+WHERE `status` = 0
+ORDER BY `orderId` DESC
+ERROR - 2020-09-06 17:34:22 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 407
+ERROR - 2020-09-06 17:35:03 --> Query error: Column 'status' in where clause is ambiguous - Invalid query: SELECT `odr`.*, `itd`.`itemName`
+FROM `orders` `odr`
+LEFT JOIN `itemdetails` `itd` ON `itd`.`itemId` = `odr`.`itemId`
+WHERE `status` = '0'
+ORDER BY `orderId` DESC
+ERROR - 2020-09-06 17:35:03 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 408
+ERROR - 2020-09-06 17:38:48 --> Severity: error --> Exception: syntax error, unexpected ';', expecting ')' C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 407
+ERROR - 2020-09-06 17:40:59 --> Severity: error --> Exception: Call to undefined function where() C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 407
+ERROR - 2020-09-06 17:42:00 --> Severity: Notice --> Array to string conversion C:\xampp\htdocs\newdailyestore\dailyestore\system\database\DB_query_builder.php 2442
+ERROR - 2020-09-06 17:42:00 --> Query error: Unknown column 'orders' in 'where clause' - Invalid query: SELECT `odr`.*, `itd`.`itemName`
+FROM `orders` `odr`
+LEFT JOIN `itemdetails` `itd` ON `itd`.`itemId` = `odr`.`itemId`
+WHERE `orders` = Array
+ORDER BY `orderId` DESC
+ERROR - 2020-09-06 17:42:00 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 408
+ERROR - 2020-09-06 17:42:22 --> Severity: Notice --> Array to string conversion C:\xampp\htdocs\newdailyestore\dailyestore\system\database\DB_query_builder.php 2442
+ERROR - 2020-09-06 17:42:22 --> Query error: Unknown column 'orders' in 'where clause' - Invalid query: SELECT `odr`.*, `itd`.`itemName`
+FROM `orders` `odr`
+LEFT JOIN `itemdetails` `itd` ON `itd`.`itemId` = `odr`.`itemId`
+WHERE `orders` = Array
+ORDER BY `orderId` DESC
+ERROR - 2020-09-06 17:42:22 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 408
+ERROR - 2020-09-06 17:42:56 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '0)
+LEFT JOIN `itemdetails` `itd` ON `itd`.`itemId` = `odr`.`itemId`
+ORDER BY `or' at line 2 - Invalid query: SELECT `odr`.*, `itd`.`itemName`
+FROM (`orders` `odr`, 0)
+LEFT JOIN `itemdetails` `itd` ON `itd`.`itemId` = `odr`.`itemId`
+ORDER BY `orderId` DESC
+ERROR - 2020-09-06 17:42:56 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 407
+ERROR - 2020-09-06 17:43:18 --> Query error: Not unique table/alias: 'odr' - Invalid query: SELECT `odr`.*, `itd`.`itemName`
+FROM (`orders` `odr`, `orders` `odr`)
+LEFT JOIN `itemdetails` `itd` ON `itd`.`itemId` = `odr`.`itemId`
+WHERE `odr`.`status` = '0'
+ORDER BY `orderId` DESC
+ERROR - 2020-09-06 17:43:18 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\newdailyestore\dailyestore\application\models\Api_model.php 407

@@ -379,12 +379,34 @@ public function allOrders()
 }
 
 //to get all orders - sowmya new
-public function allOrdersNew()
+public function allOrdersNew($limit='',$start='')
 {
+	// added address, pincode ,payment mode in orders table
       //$qry = $this->db->order_by('orderId','desc')->get('orders')->result_array();
         $this->db->select("odr.*,itd.itemName");
 									$this->db->from('orders odr');
 									$this->db->join('itemdetails itd','itd.itemId = odr.itemId','left');
+									$this->db->limit($limit, $start);
+									$offers = $this->db->order_by('orderId','desc')->get()->result_array();      
+      if(!empty($offers)){
+        return $offers;
+      }else{
+        return 0;
+      }
+}
+
+
+//to get pending orders - sowmya new
+
+public function pendingOrdersNew($limit='',$start='')
+{
+	// added address, pincode ,payment mode in orders table
+      //$qry = $this->db->order_by('orderId','desc')->get('orders')->result_array();
+        $this->db->select("odr.*,itd.itemName");
+									$this->db->from('orders odr');
+									$this->db->where(array('odr.status' =>'0'));
+									$this->db->join('itemdetails itd','itd.itemId = odr.itemId','left');
+									$this->db->limit($limit, $start);
 									$offers = $this->db->order_by('orderId','desc')->get()->result_array();      
       if(!empty($offers)){
         return $offers;
